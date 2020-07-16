@@ -11,4 +11,6 @@ plot(strptime(paste(selecteddata$Date, selecteddata$Time, sep=" "), "%d/%m/%Y %H
 lines(datetime, as.numeric(selecteddata$Sub_metering_2), type="l", col="red")
 lines(datetime, as.numeric(selecteddata$Sub_metering_3), type="l", col="blue")
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c("black", "red", "blue"))
+
+#Finally we close the Device
 dev.off()
